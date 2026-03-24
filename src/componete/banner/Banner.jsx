@@ -5,7 +5,7 @@ import bannerImage from "../../../assets/banner-main.png"
 const Banner = () => {
     return (
         <div
-            className="hero min-h-[60vh] w-10/12 mx-auto rounded-2xl"
+            className="hero min-h-[60vh] container w-10/12 mx-auto rounded-2xl"
             style={{
                 backgroundImage: `url(${bgimage})`,
                 backgroundSize: "cover",

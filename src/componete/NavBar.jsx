@@ -6,7 +6,7 @@ const NavBar = () => {
     return (
 
 
-        <div className="navbar w-10/12 mx-auto bg-base-100 mt-3  ">
+        <div className="navbar container w-10/12 mx-auto  bg-base-100 mt-3  ">
             <div className="flex-1">
                 <img src={logo} alt="logo" className="w-20" />
             </div>

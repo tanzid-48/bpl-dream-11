@@ -21,7 +21,6 @@ function App() {
     <Banner></Banner>
   <Suspense fallback= {<span className="loading loading-spinner text-accent"></span>}>
     <Player  key={Player.id} playerPromise= {playerPromise} >
-
     </Player>
   </Suspense>
     
