@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "PlayerName": "Shakib Al Hasan",
+    "playerCountry": "Bangladesh",
+    "Rating": 9.4,
+    "BattingStyle": "Left-hand bat",
+    "BowlingStyle": "Slow left-arm orthodox",
+    "Price": 1600000,
+    "Image": "https://i.ibb.co.com/9HWyRzMw/images.jpg"
+  },
+  {
+    "id": 2,
+    "PlayerName": "Virat Kohli",
+    "playerCountry": "India",
+    "Rating": 9.5,
+    "BattingStyle": "Right-hand bat",
+    "BowlingStyle": "Right-arm medium",
+    "Price": 1500000,
+    "Image": "https://i.ibb.co.com/2wDy9P4/download.jpg"
+  },
+  {
+    "id": 3,
+    "PlayerName": "Babar Azam",
+    "playerCountry": "Pakistan",
+    "Rating": 9.3,
+    "BattingStyle": "Right-hand bat",
+    "BowlingStyle": "Right-arm offbreak",
+    "Price": 1400000,
+    "Image": "https://i.ibb.co.com/RKNTxCX/download-1.jpg"
+  },
+  {
+    "id": 4,
+    "PlayerName": "Joe Root",
+    "playerCountry": "England",
+    "Rating": 9.0,
+    "BattingStyle": "Right-hand bat",
+    "BowlingStyle": "Right-arm offbreak",
+    "Price": 1300000,
+    "Image": "https://i.ibb.co.com/fG90DKWb/download-2.jpg"
+  },
+  {
+    "id": 5,
+    "PlayerName": "Kane Williamson",
+    "playerCountry": "New Zealand",
+    "Rating": 9.1,
+    "BattingStyle": "Right-hand bat",
+    "BowlingStyle": "Right-arm offbreak",
+    "Price": 1350000,
+    "Image": "https://i.ibb.co.com/8C8c825/download-3.jpg"
+  },
+  {
+    "id": 6,
+    "PlayerName": "Steve Smith",
+    "playerCountry": "Australia",
+    "Rating": 9.2,
+    "BattingStyle": "Right-hand bat",
+    "BowlingStyle": "Right-arm legbreak",
+    "Price": 1450000,
+    "Image": "https://i.ibb.co.com/zW54dQvx/download-4.jpg"
+  },
+  {
+    "id": 7,
+    "PlayerName": "Tanzid Mondol",
+    "playerCountry": "Bangladesh",
+    "Rating": 7.8,
+    "BattingStyle": "Right-hand bat",
+    "BowlingStyle": "Right-arm medium",
+    "Price": 550000,
+    "Image": "https://i.ibb.co.com/B2FrrRQw/MG-0228.jpg"
+  }
+]
