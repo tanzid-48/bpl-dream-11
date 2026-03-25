@@ -2,7 +2,7 @@ import React from 'react'
 import logo from "../../assets/logo.png"
 import dollarImg from "../../assets/DoubleDollar.png";
 
-const NavBar = () => {
+const NavBar = ({coin}) => {
     return (
 
 
@@ -18,7 +18,7 @@ const NavBar = () => {
                     <li className='paragraph mr-4'><a>Schedules</a></li>
                     <li>
                         <button className="btn btn-soft font-bold py-3 flex items-center gap-2">
-                            0 Coin
+                            {coin} Coins
                             <img src={dollarImg} alt="coin" className="w-5 h-5" />
                         </button>
                     </li>

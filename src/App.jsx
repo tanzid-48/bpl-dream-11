@@ -1,9 +1,10 @@
 
-import { Suspense } from 'react';
+import { Suspense, useState } from 'react';
 import './App.css'
 import Banner from './componete/banner/Banner'
 import NavBar from './componete/NavBar'
 import Player from './componete/player/Player';
+
 
 
 const playerPromise = fetch("/data.json")
@@ -11,16 +12,17 @@ const playerPromise = fetch("/data.json")
 
 function App() {
 
+const [coin,setCoin] = useState(5000000)
 
   return (
     <>
   <nav>
-    <NavBar></NavBar>
+    <NavBar coin = {coin} ></NavBar>
   </nav>
   <main>
     <Banner></Banner>
   <Suspense fallback= {<span className="loading loading-spinner text-accent"></span>}>
-    <Player  key={Player.id} playerPromise= {playerPromise} >
+    <Player  key={Player.id} playerPromise= {playerPromise} setCoin= {setCoin} coin = {coin} >
     </Player>
   </Suspense>
     
