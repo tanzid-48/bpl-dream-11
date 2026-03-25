@@ -1,5 +1,6 @@
 import React, { use, useState } from 'react';
 import AvaliablePlayer from '../avaliablePlayer/AvaliablePlayer';
+import SelectedPlayer from './selectedPlayer/SelectedPlayer';
 
 const Player = ({ playerPromise }) => {
      const playerContent = use(playerPromise);
@@ -12,7 +13,7 @@ const Player = ({ playerPromise }) => {
           <div className=" container mx-auto my-14">
             
             <div className="flex justify-between items-center w-10/12 mx-auto mb-6">
-               <h2 className='font-bold text-2xl'>Available player</h2>
+               { selectedType === "available" ?<h2 className='font-bold text-2xl'>Available Player</h2>: <h2 className='font-bold text-2xl'>Selected Player(2/7)</h2> }
 
                <div className="">
            <button
@@ -21,7 +22,9 @@ const Player = ({ playerPromise }) => {
 
            <button
               onClick={() => setSelectedType ("selected")}
-           className={`btn ${selectedType === "selected" ? 'bg-[#E7FE29]' : ''} rounded-l-none rounded-r-xl`}>Selected</button>
+           className={`btn ${selectedType === "selected" ? 'bg-[#E7FE29]' : ''} rounded-l-none rounded-r-xl`}>Selected(0)
+
+           </button>
 
                </div>
             </div>
@@ -29,7 +32,9 @@ const Player = ({ playerPromise }) => {
 
 
 
-               <AvaliablePlayer playerContent={playerContent}></AvaliablePlayer>
+      { selectedType === "available" 
+      ? <AvaliablePlayer playerContent={playerContent}></AvaliablePlayer> 
+      : <SelectedPlayer></SelectedPlayer>}
 
           </div>
 
