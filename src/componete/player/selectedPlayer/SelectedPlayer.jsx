@@ -14,8 +14,13 @@ const handleDeleteSelectedPlayer = (player) =>{
     return (
         <div className='w-10/12 mx-auto'>
 
-            {
-                selectedPlayer.map((player, index) => {
+            { selectedPlayer.length === 0 
+            ? <div className="h-[400px] flex items-center justify-center flex-col gap-4">
+                <h2 className='font-semibold text-3xl paragraph'>No Player Selected yet </h2>
+                <p className='font-semibold text-gray-600'>Go To Available tab to selected Player</p>
+            </div>
+
+            :selectedPlayer.map((player, index) => {
                     return (
                         <div
                             key={index}

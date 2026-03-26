@@ -4,6 +4,7 @@ import './App.css'
 import Banner from './componete/banner/Banner'
 import NavBar from './componete/NavBar'
 import Player from './componete/player/Player';
+ import { ToastContainer, toast } from 'react-toastify';
 
 const playerPromise = fetch("/data.json")
   .then(res => res.json());
@@ -26,7 +27,8 @@ function App() {
 
       </main>
 
-
+{/* react Tosatify */}
+   <ToastContainer />
 
     </>
   )
