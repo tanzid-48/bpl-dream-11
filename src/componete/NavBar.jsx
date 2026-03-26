@@ -2,7 +2,7 @@ import React from 'react'
 import logo from "../../assets/logo.png"
 import dollarImg from "../../assets/DoubleDollar.png";
 
-const NavBar = ({coin}) => {
+const NavBar = ({ coin }) => {
     return (
 
 

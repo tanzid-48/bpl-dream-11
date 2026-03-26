@@ -5,30 +5,28 @@ import Banner from './componete/banner/Banner'
 import NavBar from './componete/NavBar'
 import Player from './componete/player/Player';
 
-
-
 const playerPromise = fetch("/data.json")
-.then(res => res.json());
+  .then(res => res.json());
 
 function App() {
 
-const [coin,setCoin] = useState(5000000)
+  const [coin, setCoin] = useState(5000000)
 
   return (
     <>
-  <nav>
-    <NavBar coin = {coin} ></NavBar>
-  </nav>
-  <main>
-    <Banner></Banner>
-  <Suspense fallback= {<span className="loading loading-bars loading-xl w-11"></span>}>
-    <Player  key={Player.id} playerPromise= {playerPromise} setCoin= {setCoin} coin = {coin} >
-    </Player>
-  </Suspense>
-    
-  </main>
+      <nav>
+        <NavBar coin={coin} ></NavBar>
+      </nav>
+      <main>
+        <Banner></Banner>
+        <Suspense fallback={<span className="loading loading-bars loading-xl w-11"></span>}>
+          <Player key={Player.id} playerPromise={playerPromise} setCoin={setCoin} coin={coin} >
+          </Player>
+        </Suspense>
 
-     
+      </main>
+
+
 
     </>
   )
