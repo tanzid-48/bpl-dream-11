@@ -21,7 +21,7 @@ const [coin,setCoin] = useState(5000000)
   </nav>
   <main>
     <Banner></Banner>
-  <Suspense fallback= {<span className="loading loading-spinner text-accent"></span>}>
+  <Suspense fallback= {<span className="loading loading-bars loading-xl w-11"></span>}>
     <Player  key={Player.id} playerPromise= {playerPromise} setCoin= {setCoin} coin = {coin} >
     </Player>
   </Suspense>

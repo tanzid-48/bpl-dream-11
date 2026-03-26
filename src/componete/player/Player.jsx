@@ -7,6 +7,7 @@ const Player = ({ playerPromise, setCoin ,coin }) => {
 
 
       const [selectedType,setSelectedType] = useState("available")
+      const [selectedPlayer,setSelectedPlayer] = useState([])
 
      return (
 
@@ -33,8 +34,10 @@ const Player = ({ playerPromise, setCoin ,coin }) => {
 
 
       { selectedType === "available" 
-      ? <AvaliablePlayer playerContent={playerContent} setCoin = {setCoin} coin = {coin} ></AvaliablePlayer> 
-      : <SelectedPlayer></SelectedPlayer>}
+
+      ? <AvaliablePlayer playerContent={playerContent} setCoin = {setCoin} coin = {coin} selectedPlayer ={selectedPlayer} setSelectedPlayer ={setSelectedPlayer} ></AvaliablePlayer> 
+
+      : <SelectedPlayer selectedPlayer ={selectedPlayer} setSelectedPlayer= {setSelectedPlayer} ></SelectedPlayer>}
 
           </div>
 

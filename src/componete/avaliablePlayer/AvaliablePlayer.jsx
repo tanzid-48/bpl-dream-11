@@ -1,6 +1,6 @@
 import Card from '../ui/Card';
 
-const AvaliablePlayer = ({ playerContent ,setCoin ,coin}) => {
+const AvaliablePlayer = ({ playerContent ,setCoin ,coin ,selectedPlayer, setSelectedPlayer}) => {
 
     return (
 
@@ -8,7 +8,7 @@ const AvaliablePlayer = ({ playerContent ,setCoin ,coin}) => {
 
             {
                 playerContent.map(player => {
-                return <Card player={player} setCoin= {setCoin} coin = {coin} ></Card>
+                return <Card key={player.id} player={player} setCoin= {setCoin} coin = {coin} selectedPlayer = {selectedPlayer} setSelectedPlayer = {setSelectedPlayer} ></Card>
           
                 })
             }

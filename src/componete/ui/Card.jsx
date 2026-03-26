@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { FaRegUserCircle } from "react-icons/fa";
 import { FaFlag } from "react-icons/fa6";
+import SelectedPlayer from '../player/selectedPlayer/SelectedPlayer';
 
-const Card = ({player , setCoin, coin}) => {
+const Card = ({player , setCoin, coin, selectedPlayer, setSelectedPlayer}) => {
     const [isSelected,setIsSelected] = useState(false)
 
    const handleChoosePlayer = () => {
@@ -17,12 +18,10 @@ const Card = ({player , setCoin, coin}) => {
 
      alert(`${player.PlayerName} is Selected`)
       setIsSelected(true);
+      setSelectedPlayer([...selectedPlayer,player])
 
 
     };
-
-
-
 
   return (
                <div key={player.id} className="card bg-base-100  shadow-sm">
